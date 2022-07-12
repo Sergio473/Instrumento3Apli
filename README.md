@@ -7,7 +7,7 @@ Comandos Django
 2. Creamos una carpeta dnetro de este y luego accedemos a ella 
 ![image](https://user-images.githubusercontent.com/90642664/178551940-8d04ad12-4932-4a29-9eae-5b464233d2ef.png)
 
-3. Despues crearemos el entorno venv con el comando python -m venv (nombre de carpeta)
+3. Después crearemos el entorno venv con el comando python -m venv (nombre de carpeta)
 ![image](https://user-images.githubusercontent.com/90642664/178567813-552a5f15-8495-4d4d-a076-ef4c595e4be5.png)
 
 4. Una vez creado el venv accederemos a el mediante el nombre_del_entorno\Scripts\activate y luego instalaremos django dentro de este
@@ -21,6 +21,35 @@ Comandos Django
 
 7. Por último corremos el proyecto y comprobamos.
 ![image](https://user-images.githubusercontent.com/90642664/178566427-f039ad48-f53a-4bc8-be37-08b05670c9c5.png)
+
+Luego crearemos una aplicación llamada student, para esto ejecutamos el siguiente comando python3 manage.py startapp catstudent. Como observan yo ya lo tengo creado.
+![image](https://user-images.githubusercontent.com/90642664/178576070-157874ed-3a78-40e7-8b50-b2f2c78a8998.png)
+
+Luego modificaremos las view.py para crear una vista unica de página de inicio
+![image](https://user-images.githubusercontent.com/90642664/178576559-eaf28a9c-65aa-4984-b5ea-112879f3a7d1.png)
+
+Después modificaremos urls.py para enrutar diferentes urls a sus vistas apropiadas
+![image](https://user-images.githubusercontent.com/90642664/178576742-f65c3986-c269-482d-b2c3-ea6838b69e49.png)
+
+También modificaremos nuestra urls.py de nuestro esqueleto que es donde realmente se maneja el enrutamiento
+![image](https://user-images.githubusercontent.com/90642664/178577064-dc5ea731-1c7a-4a18-8ee4-b9281f1c01cb.png)
+
+Registrar Aplicación
+
+Para el registro nos iremos hasta settings.py y ahi os iremos hasta donde esta installed_apps y añadiremos la siguiente linea 'catstudent.apps.CatstudentConfig' para la configuración de la aplicación
+![image](https://user-images.githubusercontent.com/90642664/178578500-966d6f34-4d2a-4500-a5b6-861b8a28079e.png)
+
+Especificación de a base de datos
+
+Nos dirijimos hasta Databases en la misma pestaña de settings.py y pondremos la siguiente linea 'NAME': os.path.join(BASE_DIR, 'db.sqlite3') que especifíca que usaremos sqlite3
+
+igual modificaremos el TIME_ZONE para que le idiquemos la zona en la que nos encontramos ubicados y tome esa hora
+
+
+
+
+
+
 
 
 
