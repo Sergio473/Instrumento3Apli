@@ -43,9 +43,13 @@ Especificación de a base de datos
 
 Nos dirijimos hasta Databases en la misma pestaña de settings.py y pondremos la siguiente linea 'NAME': os.path.join(BASE_DIR, 'db.sqlite3') que especifíca que usaremos sqlite3
 
-igual modificaremos el TIME_ZONE para que le idiquemos la zona en la que nos encontramos ubicados y tome esa hora
+![image](https://user-images.githubusercontent.com/90642664/178579886-b62f7fa4-37a1-4969-8d5d-5004cc738837.png)
 
+Igual modificaremos el TIME_ZONE para que le idiquemos la zona en la que nos encontramos ubicados y tome esa hora
 
+![image](https://user-images.githubusercontent.com/90642664/178579932-a4427d69-986d-461c-b549-5e9b88c5d99f.png)
+
+Base de Datos
 
 
 
